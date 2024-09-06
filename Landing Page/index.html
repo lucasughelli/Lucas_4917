@@ -1,76 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Deportes Preti</title>
-
-	<!--Favicon-->
-	<link rel="favicon" href="./img/favicon.ico">
-	<!--Estilos-->
-	<link rel="stylesheet" href="./css/styles.css">
-	<!--Fonts-->
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./mediaqueries.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 </head>
-
 <body>
-	<header>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="./img/preti-logo (1).png" alt="preti-logo">
+            </div>
 
-		<!--Logo-->
-		<img src="./img/preti-logo (1).png" alt="Logo Preti">
+            <div class="menu-container">
+                    <ul class="ul-menu-container">
+                        <a href="#"><li href="#">ZAPATILLAS</li></a>
+                        <a href="#"><li href="#">INDUMENTARIA</li></a>
+                        <a href="#"><li href="#">ACCESORIOS</li></a>
+                        <a href="#"><li href="#">MARCAS</li></a>
+                        <a href="#"><li href="#" class="sale-btn">SALE</li></a>
+                    </ul>
+            </div>
 
-		<!--Navbar-->
-		<nav class="navbar">
-			<ul class="navbar-list">
-				<li><a href="#">Hombre</a></li>
-				<li><a href="#">Mujer</a></li>
-				<li><a href="#">Niños</a></li>
-				<li><a href="#">Accesorios</a></li>
-				<li><a href="#">SALE</a></li>
-			</ul>
-			<ul class="sidebar">
-				<li><a href="#">Hombre</a></li>
-				<li><a href="#">Mujer</a></li>
-				<li><a href="#">Niños</a></li>
-				<li><a href="#">Accesorios</a></li>
-				<li><a href="#">SALE</a></li>
-				<li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 0 24 24" width="26px" fill="currentColor"><path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"></path></svg></a></li>
-			</ul>
-			<div class="nav-hamburger">
-				<img src="" alt="">
-			</div>
+            <div class="icons">
+                <div class="search-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
 
-			<img src="./img/search-line.png" alt="search">
-			<img class="carrito" src="./img/shopping-cart-line.png" alt="Carrito">
-		</nav>
-		</main>
-	</header>
-	<main>
-		<section id="banners">
-			<div class="banner-container">
-				<div class="banner-title">
-					<h1>Topper Split</h1>
-					<h2>Un calzado de running pensado en minimizar el peso y optimizar la amortiguación, acompañado por un diseño super moderno.</h2>
-					<a href="#"><button href="#" class="vermas-button">Ver más</button></a>
-				</div>
-				<div class="banner-image">
-					<img class="img-banner-running" src="./img/289820-800-800.png" alt="Running">
-					<div class="banner-info">
-						<div class="banner-button">
-					</div>
-				</div>
-			</div>
-		</section>
+                <div class="login-btn">
+                    <i class="fa-solid fa-user"></i>
+                </div>
 
-		<!--Carrito-->
-		<!-- <label for="cart-toggle">
-			<img src="./img/shopping-cart-line.png" alt="Carrito" class="cart-icon">
-			<label>
-				<input type="checkbox">
-			</label>
-		 </label> -->
+                <div class="cart-btn">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- <div class="slider">
+            <img src="./img/banner_kappa.jpeg" alt="kappa-banner" class="kappa-banner">
+        </div> -->
+
+        <div class="slider-container">  
+            <img class="slider-item" src="./img/banner_kappa.jpeg"/>
+            <img class="slider-item" src="./img/1f97bdce-6a02-4e73-881a-22649c83eea2___2d82595b17d7b1bd19c7edbef63c65c2.webp"/>
+            <img class="slider-item" src="./img/3a955593-4dba-488c-b6a3-af0bad502078___b842d4aec60c825e76dc9b73f7a2bc5c.webp"/>
+        </div>
+
+        <div class="main-card">
+            <h1 class="title-card">TOPPER SPLIT</h1>
+            <h3 class="subtitle-card">Un calzado de running pensado en minimizar el peso y optimizar la amortiguación, acompañado por un diseño super moderno.</h3>
+
+            <img src="./img/289820-800-800.png" alt="topper split" class="card-1">
+
+            <button class="comprar-btn-cards">Comprar</button>
+        </div>
+
+        <section id="info">
+            <ul class="info-desplegable">
+                <div class="sectorInfoConBoton">
+                    <div class="textoBannerCuotas">
+                        <span id="b1">
+                            HASTA 6 CUOTAS SIN INTERES
+                        </span>
+                        <span id="b2">Todos los días</span>
+                        <span id="b3">Con tarjetas bancarias<br>Visa, Mastercard y Cabal.</span>
+                        <a href="#">
+                            <span id="b4">Ver más</span>
+                        </a>
+                    </div>
+                    <div class="textoBannerEnvio">
+                        <span id="b1">
+                            ENVIO GRATIS
+                        </span>
+                        <span id="b2">A todo el País</span>
+                        <span id="b3">En compras mayores a $99990</span>
+                        <a href="#">
+                            <span id="b4">Ver más</span>
+                        </a>
+                    </div>
+                    <div class="textoBannerRetiro">
+                        <span id="b1">
+                            RETIRA GRATIS
+                        </span>
+                        <span id="b2">En nuestras sucursales</span>
+                        <span id="b3">- O'Higgins 46<br>- Donado 47</span>
+                        <a href="#">
+                            <span id="b4">Ver más</span>
+                        </a>
+                    </div>
+                </div>
+            </ul>
+        </section>
+        <section id="brands-bottom">
+            <div class="slider-container-brands">  
+                <img class="slider-item-brand" src="./img/Topper.jpg"/>
+                <img class="slider-item-brand" src="./img/Avia_2024-05-04_165330.jpg"/>
+                <img class="slider-item-brand" src="./img/Addnice_2024-08-12_131058.jpg"/>
+                <img class="slider-item-brand" src="./img/Fila.jpg"/>
+                <img class="slider-item-brand" src="./img/Kappa_2023-03-14_104050.jpg"/>
+                <img class="slider-item-brand" src="./img/Reebok_2023-08-14_124019.jpg"/>
+                <img class="slider-item-brand" src="./img/New Balance.jpg"/>
+                <img class="slider-item-brand" src="./img/Filament_2022-01-26_145632.jpg"/>
+                <img class="slider-item-brand" src="./img/Maraton_2023-11-30_150241.jpg"/>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="logo-footer">
+            <img src="./img/preti-logo (1).png" alt="logo">
+        </div>
+        <div class="categorias-footer">
+            <h3>MENU</h3>
+            <ul class="ul-categorias-footer">
+                <li href="#">HOMBRE</li>
+                <li href="#">MUJER</li>
+                <li href="#">NIÑOS</li>
+                <li href="#">ACCESORIOS</li>
+            </ul>
+        </div>
+        <div class="informacion-footer">
+            <h3>INFORMACION</h3>
+            <ul class="ul-informacion-footer">
+                <li href="#">Preguntas frecuentes</li>
+                <li href="#">Contactanos</li>
+                <li href="#">Cambios y devoluciones</li>
+                <li href="#">Promociones</li>
+            </ul>
+        </div>
+
+        <div class="contacto-footer">
+            <h3>CONTACTANOS</h3>
+            <ul class="ul-contacto-footer">
+                <li href="#">0810-333-77384</li>
+                <li href="#">+54 9 291 404-5691</li>
+                <li href="#">info@preti.com.ar</li>
+                <li href="#">O'Higgins 46, Bahía Blanca</li>
+                <li href="#">Donado 47, Bahía Blanca</li>
+            </ul>
+        </div>
+
+        <div class="rrss-footer">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+        </div>
+
+        <div id="afip-qr">
+            <a href="#"><img src="./img/DATAWEB.jpg" alt="AFIP-QR" class="qr-afip"></a>
+        </div>
+    </footer>
 </body>
-
 </html>
